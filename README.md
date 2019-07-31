@@ -14,7 +14,7 @@ To use signing and verifying messages out of the scope of custom Java applicatio
 
 ### Run
 
-Run the downloaded binary (must be alpha-2+) with this command in a shell:
+Run the [downloaded binary](https://github.com/ice09/java-libra-client/releases) (must be alpha-2+) with this command in a shell:
 ```
 java -jar java-libra-client-0.0-alpha-2.jar
 ```
