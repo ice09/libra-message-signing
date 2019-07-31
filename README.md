@@ -30,11 +30,21 @@ The application should start with a jlibra splash screen and a shell.
 /___/
 
 jlibra:>a c
-jlibra:>a c
-jlibra:>s m "hello" 0
-jlibra:>v m "hello" ... 0
+
+Created account with Libra address: 9d0a6a7a4c07dfaaa4bfa950d4a1ba64721c6d0b700b81dddcf79b33bab6fad1
+Public key  302a300506032b65700321003d8099c5d6752dd8f9d6c066d716d04eaeb53b4a010add4ab949cfdcefc8a91e
+Private key 3051020101300506032b657004220420935623304e37057ee49a059b2ed461cc2a2d66eda2333e905fce6be92946c4888121003d8099c5d6752dd8f9d6c066d716d04eaeb53b4a010add4ab949cfdcefc8a91e
+
+jlibra:>s m 'Hello' 0
+
+Signed message is dedd66677267fe2582d0e4bbb14507776537fd138483ea80f3512ec36c25431ca218ed90d08283a9991b3e894e98b2eddc71ce99b19c35a8e2fb4e6c1f546704
+
+jlibra:>v m 'Hello' dedd66677267fe2582d0e4bbb14507776537fd138483ea80f3512ec36c25431ca218ed90d08283a9991b3e894e98b2eddc71ce99b19c35a8e2fb4e6c1f546704 0
+
+Message was signed by provided public key.
+
+jlibra:>v m 'hello' dedd66677267fe2582d0e4bbb14507776537fd138483ea80f3512ec36c25431ca218ed90d08283a9991b3e894e98b2eddc71ce99b19c35a8e2fb4e6c1f546704 0
+
+Message was NOT signed by provided public key.
 
 ```
-
-### Real Life Use Case
-
