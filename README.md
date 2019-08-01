@@ -48,3 +48,20 @@ jlibra:>v m 'hello' dedd66677267fe2582d0e4bbb14507776537fd138483ea80f3512ec36c25
 Message was NOT signed by provided public key.
 
 ```
+
+### Real Life Use Case
+
+![Message Signing and Verification Use Case](docs/img/LibraSigning.png)
+
+#### Process Flow for IOU Use Case
+
+* Alice sends Bob her address (0xALICE) and her public key (0xPUBKEY).
+  * Optional: Bob can let Alice send a transaction, check the address and then retrieve the public key from the events.
+* Alice should sign a message sent by Bob to her (which includes a Nounce or timestamp to prevent replay attacks),
+* Bob can verify that Alice signed the message by comparing with the public key.
+* Bob now knows that Alice controls address 0xALICE and can transfer money to this address.
+* The message could be a contract, by signing the message Alice verified the contract.
+
+As a result, Alice signed the contractual agreement and gets the money transferred to the address which signed the message.  
+There is no possibility of fraud in the process without necessity  of a trusted 3rd party.
+  
